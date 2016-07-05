@@ -1,0 +1,20 @@
+{
+    "name": "gnode-bootstrap-theme",
+    "version": "1.0.2",
+    "description": "Bluish G-Node theme for bootstrap 3",
+    "author": "A. Stoewer <adrian.stoewer@rz.ifi.lmu.de>",
+    "private": true,
+    "scripts": {
+        "build": "gulp",
+        "dev": "gulp dev"
+    },
+    "devDependencies": {
+        "bootstrap": "^3.3.6",
+        "gulp": "^3.9.1",
+        "gulp-copy": "^0.0.2",
+        "gulp-less": "^3.1.0",
+        "gulp-clean-css": "2.0.10",
+        "gulp-rename": "^1.2.2",
+        "gulp-connect": "^4.1.0"
+    }
+}

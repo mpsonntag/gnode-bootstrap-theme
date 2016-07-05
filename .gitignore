@@ -1,0 +1,16 @@
+# node
+node_modules/
+npm-debug.log
+
+# gulp output
+build/
+
+# idea
+.idea
+*.iml
+
+# tmp
+*~
+
+# log files
+*.log
