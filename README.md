@@ -5,9 +5,6 @@ G-Nodes custom bluish theme based on bootstrap.
 ## Build Setup
 
 ``` bash
-# install build tool gulp
-npm install -g gulp
-
 # install dependencies
 npm install
 
