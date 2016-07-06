@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+
+<!--
+This file is base on the examples shown on the bootstrap web page:
+- https://getbootstrap.com/components/
+- https://getbootstrap.com/css/
+-->
+
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -6,47 +13,729 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/build/css/bootstrap.min.css">
     <title>G-Node Bootstrap Theme - Test Page</title>
+    <style>
+        .example {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 2em;
+        }
+        .contextual-backgrounds p {
+            padding: 1em;
+        }
+    </style>
 </head>
 <body>
-    <div id="main">
-        <nav class="navbar navbar-fixed-top navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- collapsed menu button -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- navbar branding -->
-                    <a class="navbar-brand" href="#">Brand</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Link One</a></li>
-                        <li><a href="#">Link Two</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown Menu<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Menu One</a></li>
-                                <li><a href="#">Menu Two</a></li>
-                                <li><a href="#">Menu Three</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated Menu</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
             </div>
-        </nav>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" class="active">Link One</a></li>
+                    <li><a href="#">Link Two</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown Menu<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#headings">Headings</a></li>
+                            <li><a href="#paragraphs">Paragraphs</a></li>
+                            <li><a href="#inline-text-elements">Inline Text Elements</a></li>
+                            <li><a href="#addresses">Addresses</a></li>
+                            <li><a href="#quotes">Quotes</a></li>
+                            <li><a href="#lists">Lists</a></li>
+                            <li><a href="#tables">Tables</a></li>
+                            <li><a href="#forms">Forms</a></li>
+                            <li><a href="#control-sizing">Control Sizing</a></li>
+                            <li><a href="#buttons">Buttons</a></li>
+                            <li><a href="#button-groups">Button Groups</a></li>
+                            <li><a href="#contextual-backgrounds">Contextual Backgrounds</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#dropdown">Dropdown</a></li>
+                            <li><a href="#tabs">Tab Navigation</a></li>
+                            <li><a href="#pills">Pills Navigation</a></li>
+                            <li><a href="#navbar-default">Navbar Default</a></li>
+                            <li><a href="#navbar-inverse">Navbar Inverse</a></li>
+                            <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+                            <li><a href="#pagination">Pagination</a></li>
+                            <li><a href="#labels">Labels</a></li>
+                            <li><a href="#badges">Badges</a></li>
+                            <li><a href="#alerts">Alerts</a></li>
+                            <li><a href="#panels">Panels</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <div class="container main-container">
-            This is the content
+    <div class="container main-container">
+        <h1 id="headings">Headings</h1>
+        <hr>
+        <div class="example">
+            <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+            <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+            <h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+            <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+            <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+            <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+        </div>
+
+        <h1 id="paragraphs">Paragraphs</h1>
+        <hr>
+        <div class="example">
+            <p class="lead">
+                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+            </p>
+            <p>
+                Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+
+                Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+            </p>
+        </div>
+
+        <h1 id="inline-text-elements">Inline text elements</h1>
+        <hr>
+        <div class="example">
+            This text is <mark>marked</mark> but it can also be <del>deleted</del> or maybe <s>striked through</s>.
+            Text can also be <ins>inserted like this one</ins> which looks like <u>text with underline</u>.
+            If the text is really unimportant <small>it may be smaller</small>.
+            Whereas important text should be <strong>bold</strong> or <em>emphasized</em>.
+        </div>
+
+        <h1 id="addresses">Addresses</h1>
+        <hr>
+        <div class="example">
+            <address>
+                <strong>Twitter, Inc.</strong><br>
+                1355 Market Street, Suite 900<br>
+                San Francisco, CA 94103<br>
+                <abbr title="Phone">P:</abbr> (123) 456-7890
+            </address>
+
+            <address>
+                <strong>Full Name</strong><br>
+                <a href="mailto:#">first.last@example.com</a>
+            </address>
+        </div>
+
+        <h1 id="quotes">Quotes</h1>
+        <hr>
+        <div class="example">
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+        </div>
+
+        <h1 id="lists">Lists</h1>
+        <hr>
+        <div class="example">
+            <h3>Normal</h3>
+            <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                    <li>Vestibulum laoreet porttitor sem</li>
+                    <li>Ac tristique libero volutpat at</li>
+                </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+            </ul>
+            <h3>Ordered</h3>
+            <ol>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+            </ol>
+            <h3>Unstyled</h3>
+            <ul class="list-unstyled">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit <ul>
+                    <li>Phasellus iaculis neque</li>
+                    <li>Purus sodales ultricies</li>
+                    <li>Vestibulum laoreet porttitor sem</li>
+                    <li>Ac tristique libero volutpat at</li>
+                </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+            </ul>
+            <h3>Inline</h3>
+            <ul class="list-inline">
+                <li>Lorem ipsum</li>
+                <li>Phasellus iaculis</li>
+                <li>Nulla volutpat</li>
+            </ul>
+            <h3>Description</h3>
+            <dl>
+                <dt>Description lists</dt>
+                <dd>A description list is perfect for defining terms.</dd>
+                <dt>Euismod</dt>
+                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            </dl>
+            <h3>Description Inline</h3>
+            <dl class="dl-horizontal">
+                <dt>Description lists</dt>
+                <dd>A description list is perfect for defining terms.</dd>
+                <dt>Euismod</dt>
+                <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            </dl>
+        </div>
+
+        <h1 id="tables">Tables</h1>
+        <hr>
+        <div class="example">
+            <h3>Normal Table</h3>
+            <table class="table">
+                <caption>Optional table caption.</caption>
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+            <h3>Table with Striped Rows</h3>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h1 id="forms">Forms</h1>
+        <hr>
+        <div class="example">
+            <h3>Inline Form</h3>
+            <form class="form-inline">
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="exampleInputPassword3">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-default">Sign in</button>
+            </form>
+            <h3>Horizontal Form</h3>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Sign in</button>
+                    </div>
+                </div>
+            </form>
+            <h3>Form with Warnings</h3>
+            <form class="form-horizontal">
+                <div class="form-group has-error">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        <span class="help-block">Invalid email.</span>
+                    </div>
+                </div>
+                <div class="form-group has-warning">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        <span class="help-block">Weak password.</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Remember me
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Sign in</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <h1 id="control-sizing">Control Sizing</h1>
+        <hr>
+        <div class="example">
+            <form class="form">
+                <div class="form-group"><input class="form-control input-lg" placeholder=".input-lg" type="text"></div>
+                <div class="form-group"><input class="form-control" placeholder="Default input" type="text"></div>
+                <div class="form-group"><input class="form-control input-sm" placeholder=".input-sm" type="text"></div>
+                <div class="form-group">
+                    <select class="form-control input-lg">
+                        <option value="">.input-lg</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control">
+                        <option value="">Default select</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select class="form-control input-sm">
+                        <option value="">.input-sm</option>
+                    </select>
+                </div>
+            </form>
+            <form class="form-horizontal">
+                <div class="form-group form-group-lg">
+                    <label class="col-sm-2 control-label" for="formGroupInputLarge">Large label</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Large input">
+                    </div>
+                </div>
+                <div class="form-group form-group-sm">
+                    <label class="col-sm-2 control-label" for="formGroupInputSmall">Small label</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small input">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <h1 id="buttons">Buttons</h1>
+        <hr>
+        <div class="example">
+            <div>
+                <button type="button" class="btn btn-default">Default</button>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-link">Link</button>
+            </div>
+            <br>
+            <div>
+                <button type="button" class="btn btn-default btn-lg">Large button</button>
+                <button type="button" class="btn btn-default">Default button</button>
+                <button type="button" class="btn btn-default btn-sm">Small button</button>
+                <button type="button" class="btn btn-default btn-xs">Extra small button</button>
+            </div>
+            <br>
+            <div>
+                <a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a>
+                <a href="#" class="btn btn-default btn-lg active" role="button">Link</a>
+            </div>
+            <br>
+            <div>
+                <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
+            </div>
+        </div>
+
+        <h1 id="button-groups">Button Groups</h1>
+        <hr>
+        <div class="example">
+            <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+                <button type="button" class="btn btn-default">Left</button>
+                <button type="button" class="btn btn-default">Middle</button>
+                <button type="button" class="btn btn-default">Right</button>
+            </div>
+            <br><br>
+            <div class="btn-group" role="group" aria-label="Default button group">
+                <button type="button" class="btn btn-default">Left</button>
+                <button type="button" class="btn btn-default">Middle</button>
+                <button type="button" class="btn btn-default">Right</button>
+            </div>
+            <br><br>
+            <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                <button type="button" class="btn btn-default">Left</button>
+                <button type="button" class="btn btn-default">Middle</button>
+                <button type="button" class="btn btn-default">Right</button>
+            </div>
+            <br><br>
+            <div class="btn-group btn-group-xs" role="group" aria-label="Extra-small button group">
+                <button type="button" class="btn btn-default">Left</button>
+                <button type="button" class="btn btn-default">Middle</button>
+                <button type="button" class="btn btn-default">Right</button>
+            </div>
+            <br><br>
+            <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group with nested dropdown">
+                <a href="#" class="btn btn-default" role="button">Left</a>
+                <a href="#" class="btn btn-default" role="button">Middle</a>
+                <div class="btn-group" role="group">
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Dropdown <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h1 id="contextual-backgrounds">Contextual Backgrounds</h1>
+        <hr>
+        <div class="example contextual-backgrounds">
+            <p class="bg-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p class="bg-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+            <p class="bg-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            <p class="bg-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+            <p class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+
+        <h1 id="dropdown">Dropdown</h1>
+        <hr>
+        <div class="example">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li class="dropdown-header">Dropdown header</li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Dropdown header</li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </div>
+            <br><br><br><br>
+        </div>
+
+        <h1 id="tabs">Tab Navigation</h1>
+        <hr>
+        <div class="example">
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+        </div>
+
+        <h1 id="pills">Pills Navigation</h1>
+        <hr>
+        <div class="example">
+            <ul class="nav nav-pills">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Messages</a></li>
+            </ul>
+        </div>
+
+        <h1 id="navbar-default">Navbar Default</h1>
+        <hr>
+        <div class="example">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Brand</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <h1 id="navbar-inverse">Navbar Inverse</h1>
+        <hr>
+        <div class="example">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Brand</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <h1 id="breadcrumbs">Breadcrumbs</h1>
+        <hr>
+        <div class="example">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li class="active">Data</li>
+            </ol>
+        </div>
+
+        <h1 id="pagination">Pagination</h1>
+        <hr>
+        <div class="example">
+            <nav>
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <h1 id="labels">Labels</h1>
+        <hr>
+        <div class="example">
+            <div>
+                <h1>Example heading <span class="label label-default">New</span></h1>
+                <h2>Example heading <span class="label label-default">New</span></h2>
+                <h3>Example heading <span class="label label-default">New</span></h3>
+                <h4>Example heading <span class="label label-default">New</span></h4>
+                <h5>Example heading <span class="label label-default">New</span></h5>
+                <h6>Example heading <span class="label label-default">New</span></h6>
+            </div>
+            <div>
+                <span class="label label-default">Default</span>
+                <span class="label label-primary">Primary</span>
+                <span class="label label-success">Success</span>
+                <span class="label label-info">Info</span>
+                <span class="label label-warning">Warning</span>
+                <span class="label label-danger">Danger</span>
+            </div>
+        </div>
+
+        <h1 id="badges">Badges</h1>
+        <hr>
+        <div class="example">
+            <a href="#">Inbox <span class="badge">42</span></a> <br><br>
+            <button class="btn btn-primary" type="button"> Messages <span class="badge">4</span></button>
+            <button class="btn btn-default" type="button"> Messages <span class="badge">4</span></button>
+        </div>
+
+        <h1 id="alerts">Alerts</h1>
+        <hr>
+        <div class="example">
+            <div class="alert alert-success" role="alert">
+                <strong>Well done!</strong>
+                You successfully read this important alert message.
+            </div>
+            <div class="alert alert-info" role="alert">
+                <strong>Heads up!</strong>
+                This alert needs your attention, but it's not super important.
+            </div>
+            <div class="alert alert-warning" role="alert">
+                <strong>Warning!</strong>
+                Better check yourself, you're not looking too good.
+            </div>
+            <div class="alert alert-danger" role="alert">
+                <strong>Oh snap!</strong>
+                Change a few things up and try submitting again.
+            </div>
+        </div>
+
+        <h1 id="panels">Panels</h1>
+        <hr>
+        <div class="example">
+            <div class="panel panel-default">
+                <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+                <div class="panel-body">Panel content</div>
+                <div class="panel-footer">Panel footer</div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+                <div class="panel-body">Panel content</div>
+                <div class="panel-footer">Panel footer</div>
+            </div>
+            <div class="panel panel-success">
+                <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+                <div class="panel-body">Panel content</div>
+                <div class="panel-footer">Panel footer</div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+                <div class="panel-body">Panel content</div>
+                <div class="panel-footer">Panel footer</div>
+            </div>
+            <div class="panel panel-warning">
+                <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+                <div class="panel-body">Panel content</div>
+                <div class="panel-footer">Panel footer</div>
+            </div>
+            <div class="panel panel-danger">
+                <div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>
+                <div class="panel-body">Panel content</div>
+                <div class="panel-footer">Panel footer</div>
+            </div>
         </div>
     </div>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="/build/js/bootstrap.min.js"></script>
 </body>
