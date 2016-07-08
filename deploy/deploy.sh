@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-USER="nix"
+USER="assets"
 HOST="projects.g-node.org"
 TARGET_DIR="html"
 SFTP="sftp -i deploy/key -o StrictHostKeyChecking=no ${USER}@${HOST}:${TARGET_DIR}"
@@ -20,6 +20,7 @@ mkdir gnode-bootstrap-theme/${VERSION}
 mkdir gnode-bootstrap-theme/${VERSION}/css
 mkdir gnode-bootstrap-theme/${VERSION}/js
 mkdir gnode-bootstrap-theme/${VERSION}/fonts
+mkdir gnode-bootstrap-theme/${VERSION}/img
 put -r build/* gnode-bootstrap-theme/${VERSION}/
 bye
 EOF
