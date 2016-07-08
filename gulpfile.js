@@ -5,7 +5,7 @@ var less = require("gulp-less");
 var cleanCSS = require("gulp-clean-css");
 var connect = require("gulp-connect");
 
-var copyFiles = [
+var bootstrapFile = [
     "node_modules/bootstrap/dist/js/bootstrap.js",
     "node_modules/bootstrap/dist/js/bootstrap.min.js",
     "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot",
@@ -15,8 +15,13 @@ var copyFiles = [
     "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"
 ];
 
+var imgFiles = [
+    "src/img/favicon.png",
+    "src/img/gnode-logo-white.png"
+];
+
 gulp.task("less", function() {
-    return gulp.src("styles/less/bootstrap.less")
+    return gulp.src("src/less/bootstrap.less")
         .pipe(less())
         .pipe(gulp.dest("build/css/"));
 });
@@ -29,20 +34,25 @@ gulp.task("css", ["less"], function () {
        .pipe(connect.reload())
 });
 
-gulp.task("copy", function () {
-    return gulp.src(copyFiles)
+gulp.task("copy-bootstrap", function () {
+    return gulp.src(bootstrapFile)
         .pipe(copy("build", {"prefix": 3}))
 });
 
-gulp.task("watch", function() {
-    gulp.watch("styles/less/*.less", ["css"]);
+gulp.task("copy-img", function () {
+    return gulp.src(imgFiles)
+        .pipe(copy("build", {"prefix": 1}))
 });
 
-gulp.task("dev", ["watch", "css"], function () {
+gulp.task("watch", function() {
+    gulp.watch("src/less/*.less", ["css"]);
+});
+
+gulp.task("dev", ["watch", "css", "copy-bootstrap", "copy-img"], function () {
     connect.server({
         port: 8084,
         livereload: true
     })
 });
 
-gulp.task("default", ["css", "copy"]);
+gulp.task("default", ["css", "copy-bootstrap", "copy-img"]);
