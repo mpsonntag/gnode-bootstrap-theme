@@ -12,6 +12,10 @@ install:
 script:
 - npm run build
 
-after_success:
-- openssl aes-256-cbc -K $encrypted_c792ecfbc4b2_key -iv $encrypted_c792ecfbc4b2_iv -in deploy/key.enc -out deploy/key -d
-- deploy/deploy.sh
+deploy:
+  provider: script
+  script: deploy/deploy.sh
+  skip_cleanup: true
+  on:
+    repo: G-Node/gnode-bootstrap-theme
+    branch: master
