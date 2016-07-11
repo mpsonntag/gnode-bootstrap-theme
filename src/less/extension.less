@@ -1,26 +1,30 @@
 
 body {
   background-color:   #F7F7F7;
-  padding-top:        70px;
+  margin-top:         70px;
 }
 
 .main-container {
-  border-radius:      1em;
-  padding:            1.5em;
+  border-radius:      @border-radius-large;
+  padding:            1em 2.5em 2.5em;
   background-color:   white;
 }
 
 .panel .panel-heading {
-  font-size:          1.2em;
+  font-size:          @font-size-large;
 }
 
 .navbar {
   font-size:          @font-size-large;
 
   .navbar-brand-gnode {
-    display: block;
-    width: 180px;
-    height: 50px;
-    background: url("../img/gnode-logo-white.png") no-repeat center;
+    display:          block;
+    width:            180px;
+    height:           50px;
+    background:       url("../img/gnode-logo-white.png") no-repeat center;
   }
+}
+
+.navbar-inverse {
+  box-shadow:         inset 0 -2px 5px rgba(0, 0, 0, 0.05);
 }
