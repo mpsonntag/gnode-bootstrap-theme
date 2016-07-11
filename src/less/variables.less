@@ -1,28 +1,71 @@
 // additional colors
 
-@blue-gnode: rgb(85, 123, 185);
-@blue-light: lighten(@blue-gnode, 3%);
-@blue-very-bright: rgb(234, 238, 247);
+@blue-gnode:                rgb(85, 123, 185);
+@blue-gnode-dark:           darken(@blue-gnode, 6.5%);
+@blue-gnode-light:          lighten(@blue-gnode, 3%);
+@blue-gnode-bright:         rgb(234, 238, 247);
+
+@color-grass:               rgb(160, 212, 104);
+@color-grass-dark:          rgb(140, 193, 82);
+
+@color-aqua:                rgb(79, 193, 233);
+@color-aqua-dark:           rgb(59, 175, 218);
+
+@color-sunflower:           rgb(255, 206, 84);
+@color-sunflower-dark:      rgb(246, 187, 66);
+
+@color-grapefruit:          rgb(237, 85, 101);
+@color-grapefruit-dark:     rgb(218, 68, 83);
 
 // brand colors
 
-@brand-primary:   @blue-gnode;
-@brand-success:   #3D990F;
-@brand-info:      #80BEE6;
-@brand-warning:   #fe9420;
-@brand-danger:    #bb3b35;
+@brand-primary:             @blue-gnode;
+@brand-success:             @color-grass-dark;
+@brand-info:                @color-aqua-dark;
+@brand-warning:             @color-sunflower-dark;
+@brand-danger:              @color-grapefruit-dark;
+
+// fonts
+
+@font-family-sans-serif:    "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:         "EB Garamond", Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:     Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:          @font-family-sans-serif;
+
+@font-size-base:            14px;
+@font-size-large:           ceil((@font-size-base * 1.125)); // ~16px
+@font-size-small:           ceil((@font-size-base * 0.85));  // ~12px
+
+@font-size-h1:              floor((@font-size-base * 2.15)); // ~30px
+@font-size-h2:              ceil((@font-size-base * 1.95));  // ~28px
+@font-size-h3:              ceil((@font-size-base * 1.7));   // ~24px
+@font-size-h4:              @font-size-large;
+@font-size-h5:              @font-size-base;
+@font-size-h6:              ceil((@font-size-base * 0.85));  // ~12px
+
+// components (borders)
+
+@border-radius-base:        3px;
+@border-radius-large:       4px;
+@border-radius-small:       2px;
 
 // navbar inverse (blue)
 
-@navbar-inverse-color:  rgb(230, 240, 255);
-@navbar-inverse-bg:     @blue-gnode;
+@navbar-inverse-color:                @blue-gnode-bright;
+@navbar-inverse-bg:                   @blue-gnode;
 
 @navbar-inverse-link-color:           @navbar-inverse-color;
 @navbar-inverse-link-hover-color:     @navbar-inverse-color;
-@navbar-inverse-link-hover-bg:        @blue-light;
+@navbar-inverse-link-hover-bg:        @blue-gnode-dark;
+
+@navbar-inverse-link-active-color:    white;
+@navbar-inverse-link-active-bg:       @blue-gnode-dark;
+
+@navbar-inverse-link-disabled-color:  rgb(68, 68, 68);
+@navbar-inverse-link-disabled-bg:     transparent;
 
 @navbar-inverse-brand-color:          @navbar-inverse-link-color;
-@navbar-inverse-brand-hover-color:    @navbar-inverse-link-hover-color;
+@navbar-inverse-brand-hover-color:    white;
 @navbar-inverse-brand-hover-bg:       @navbar-inverse-link-hover-bg;
 
 @navbar-inverse-toggle-hover-bg:      @navbar-inverse-link-hover-bg;
@@ -30,8 +73,11 @@
 @navbar-inverse-toggle-border-color:  @navbar-inverse-link-color;
 
 // navs (tabs / pills)
-@nav-link-hover-bg:                   @blue-very-bright;
+@nav-link-hover-bg:                   @blue-gnode-bright;
 
 // panels
-@panel-default-heading-bg:            @blue-very-bright;
+@panel-default-heading-bg:            @blue-gnode-bright;
 @panel-footer-bg:                     @panel-default-heading-bg;
+
+// breadcrumbs
+@breadcrumb-bg:                       @blue-gnode-bright;

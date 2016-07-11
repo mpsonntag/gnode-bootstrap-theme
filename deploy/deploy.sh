@@ -10,6 +10,7 @@ if [ -z "${VERSION}" ]; then
     exit 1
 fi
 
+openssl aes-256-cbc -K $encrypted_c792ecfbc4b2_key -iv $encrypted_c792ecfbc4b2_iv -in deploy/key.enc -out deploy/key -d
 chmod go-rwx deploy/key
 echo "Key fingerprint: `md5sum deploy/key`"
 echo "Deploying now to ${HOST}:${TARGET_DIR}/gnode-bootstrap-theme/${VERSION}"
