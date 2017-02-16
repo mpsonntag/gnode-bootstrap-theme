@@ -1,6 +1,6 @@
 {
     "name": "gnode-bootstrap-theme",
-    "version": "1.0.0-snapshot",
+    "version": "1.1.0",
     "description": "Bluish G-Node theme for bootstrap 3",
     "author": "A. Stoewer <adrian.stoewer@rz.ifi.lmu.de>",
     "private": true,
