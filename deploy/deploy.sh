@@ -26,6 +26,6 @@ mkdir gnode-bootstrap-theme/${VERSION}/fonts
 mkdir gnode-bootstrap-theme/${VERSION}/img
 put -r build/* gnode-bootstrap-theme/${VERSION}/
 rm gnode-bootstrap-theme/latest
-ln -s "$(pwd)"/gnode-bootstrap/${VERSION} "$(pwd)"/gnode-bootstrap/latest
+ln -s gnode-bootstrap/${VERSION} gnode-bootstrap/latest
 bye
 EOF
