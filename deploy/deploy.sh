@@ -5,10 +5,12 @@ HOST="projects.g-node.org"
 TARGET_DIR="html"
 SFTP="sftp -i deploy/key -o StrictHostKeyChecking=no ${USER}@${HOST}:${TARGET_DIR}"
 
+VERSION="$(grep version package.json | grep -oP '[0-9].[0-9].[0-9]*+')"
 if [ -z "${VERSION}" ]; then
     echo "Variable VERSION is not set"
     exit 1
 fi
+VERSION=$VERSION"-snapshot"
 
 openssl aes-256-cbc -K $encrypted_c792ecfbc4b2_key -iv $encrypted_c792ecfbc4b2_iv -in deploy/key.enc -out deploy/key -d
 chmod go-rwx deploy/key
@@ -23,5 +25,7 @@ mkdir gnode-bootstrap-theme/${VERSION}/js
 mkdir gnode-bootstrap-theme/${VERSION}/fonts
 mkdir gnode-bootstrap-theme/${VERSION}/img
 put -r build/* gnode-bootstrap-theme/${VERSION}/
+rm gnode-bootstrap-theme/latest
+ln -s "$(pwd)"/gnode-bootstrap/${VERSION} "$(pwd)"/gnode-bootstrap/latest
 bye
 EOF
