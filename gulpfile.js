@@ -17,7 +17,9 @@ var bootstrapFile = [
 
 var imgFiles = [
     "src/img/favicon.png",
-    "src/img/gnode-logo-white.png"
+    "src/img/gnode-logo-white.png",
+    "src/img/gnode-icon-50x50-transparent.png",
+    "src/img/gin-logo-90x50.png"
 ];
 
 gulp.task("less", function() {
