@@ -1,35 +1,31 @@
 
 body {
-  background-color:   white;
-  margin-top:         70px;
+    background-color:   white;
+    margin-top:         70px;
 }
 
 .main-container {
-  border-radius:      @border-radius-large;
-  padding:            1em 2.5em 2.5em;
-  background-color:   white;
-}
-
-.panel .panel-heading {
-  font-size:          @font-size-large;
+    border-radius:      @border-radius-large;
+    padding:            1em 2.5em 2.5em;
+    background-color:   white;
 }
 
 .navbar {
-  font-size:          @font-size-large;
+    font-size:          @font-size-large;
 
-  .navbar-brand-gnode {
-    display:          block;
-    width:            180px;
-    height:           50px;
-    background:       url("../img/gnode-logo-white.png") no-repeat center;
-  }
+    .navbar-brand-gnode {
+        display:          block;
+        width:            180px;
+        height:           50px;
+        background:       url("../img/gnode-logo-white.png") no-repeat center;
+    }
 
-  .navbar-brand-gin {
-    display:          block;
-    width:            90px;
-    height:           55px;
-    background:       url("../img/gin-logo-90x50.png") no-repeat center;
-  }
+    .navbar-brand-gin {
+        display:          block;
+        width:            90px;
+        height:           55px;
+        background:       url("../img/gin-logo-90x50.png") no-repeat center;
+    }
 }
 
 .navbar-fixed-bottom {
@@ -43,23 +39,29 @@ body {
     }
 }
 
+.navbar-inverse {
+    box-shadow:     inset 0 -2px 5px rgba(0, 0, 0, 0.05);
+}
+
 .display-table {
     display: table;
 }
 
 .display-cell {
-    display: table-cell;
-    vertical-align: middle;
-    float: none;
-}
-
-.navbar-inverse {
-  box-shadow:         inset 0 -2px 5px rgba(0, 0, 0, 0.05);
+    display:            table-cell;
+    vertical-align:     middle;
+    float:              none;
 }
 
 .panel {
+    margin-bottom: 5px;
+
+    .panel-heading {
+        font-size:      @font-size-large;
+    }
+
     .panel-heading-accordion {
-        border-bottom: 1px solid;
-        border-bottom-color: #D3D3D3;
+        border-bottom:          1px solid;
+        border-bottom-color:    #D3D3D3;
     }
 }
