@@ -69,12 +69,13 @@ This file is base on the examples shown on the bootstrap web page:
                             <li><a href="#badges">Badges</a></li>
                             <li><a href="#alerts">Alerts</a></li>
                             <li><a href="#panels">Panels</a></li>
-                            <li><a href="sec_accordion">Accordion</a></li>
+                            <li><a href="#accordion">Accordion</a></li>
                             <li><a href="#jumbotron">Jumbotron</a></li>
+                            <li role="separator" class="divider"></li>
                             <li><a href="#callout">Callout</a></li>
                             <li><a href="#contextual-backgrounds">Contextual Backgrounds</a></li>
                             <li><a href="#plainbox">Plain box entity</a></li>
-                            <li><a href="#colors-available">Plain box entity</a></li>
+                            <li><a href="#colors-available">Available colors</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -107,7 +108,8 @@ This file is base on the examples shown on the bootstrap web page:
     </nav>
 
     <div class="container main-container">
-        <h1 id="headings">Headings</h1>
+        <h1>Components available via the gnode-bootstrap-theme</h1>
+        <h3 id="headings">Headings</h3>
         <hr>
         <div class="example">
             <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
@@ -118,7 +120,7 @@ This file is base on the examples shown on the bootstrap web page:
             <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
         </div>
 
-        <h1 id="paragraphs">Paragraphs</h1>
+        <h3 id="paragraphs">Paragraphs</h3>
         <hr>
         <div class="example">
             <p class="lead">
@@ -139,7 +141,7 @@ This file is base on the examples shown on the bootstrap web page:
             </p>
         </div>
 
-        <h1 id="inline-text-elements">Inline text elements</h1>
+        <h3 id="inline-text-elements">Inline text elements</h3>
         <hr>
         <div class="example">
             This text is <mark>marked</mark> but it can also be <del>deleted</del> or maybe <s>striked through</s>.
@@ -148,7 +150,7 @@ This file is base on the examples shown on the bootstrap web page:
             Whereas important text should be <strong>bold</strong> or <em>emphasized</em>.
         </div>
 
-        <h1 id="addresses">Addresses</h1>
+        <h3 id="addresses">Addresses</h3>
         <hr>
         <div class="example">
             <address>
@@ -164,7 +166,7 @@ This file is base on the examples shown on the bootstrap web page:
             </address>
         </div>
 
-        <h1 id="quotes">Quotes</h1>
+        <h3 id="quotes">Quotes</h3>
         <hr>
         <div class="example">
             <blockquote>
@@ -173,10 +175,10 @@ This file is base on the examples shown on the bootstrap web page:
             </blockquote>
         </div>
 
-        <h1 id="lists">Lists</h1>
+        <h2 id="lists">Lists</h2>
         <hr>
         <div class="example">
-            <h3>Normal</h3>
+            <h4>Normal</h4>
             <ul>
                 <li>Lorem ipsum dolor sit amet</li>
                 <li>Facilisis in pretium nisl aliquet</li>
@@ -189,14 +191,14 @@ This file is base on the examples shown on the bootstrap web page:
                 </li>
                 <li>Faucibus porta lacus fringilla vel</li>
             </ul>
-            <h3>Ordered</h3>
+            <h4>Ordered</h4>
             <ol>
                 <li>Lorem ipsum dolor sit amet</li>
                 <li>Consectetur adipiscing elit</li>
                 <li>Integer molestie lorem at massa</li>
                 <li>Facilisis in pretium nisl aliquet</li>
             </ol>
-            <h3>Unstyled</h3>
+            <h4>Unstyled</h4>
             <ul class="list-unstyled">
                 <li>Lorem ipsum dolor sit amet</li>
                 <li>Facilisis in pretium nisl aliquet</li>
@@ -209,20 +211,20 @@ This file is base on the examples shown on the bootstrap web page:
                 </li>
                 <li>Faucibus porta lacus fringilla vel</li>
             </ul>
-            <h3>Inline</h3>
+            <h4>Inline</h4>
             <ul class="list-inline">
                 <li>Lorem ipsum</li>
                 <li>Phasellus iaculis</li>
                 <li>Nulla volutpat</li>
             </ul>
-            <h3>Description</h3>
+            <h4>Description</h4>
             <dl>
                 <dt>Description lists</dt>
                 <dd>A description list is perfect for defining terms.</dd>
                 <dt>Euismod</dt>
                 <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
             </dl>
-            <h3>Description Inline</h3>
+            <h4>Description Inline</h4>
             <dl class="dl-horizontal">
                 <dt>Description lists</dt>
                 <dd>A description list is perfect for defining terms.</dd>
@@ -231,10 +233,10 @@ This file is base on the examples shown on the bootstrap web page:
             </dl>
         </div>
 
-        <h1 id="tables">Tables</h1>
+        <h3 id="tables">Tables</h3>
         <hr>
         <div class="example">
-            <h3>Normal Table</h3>
+            <h4>Normal Table</h4>
             <table class="table">
                 <caption>Optional table caption.</caption>
                 <thead>
@@ -266,7 +268,7 @@ This file is base on the examples shown on the bootstrap web page:
                 </tr>
                 </tbody>
             </table>
-            <h3>Table with Striped Rows</h3>
+            <h4>Table with Striped Rows</h4>
             <table class="table table-striped">
                 <thead>
                 <tr>
@@ -299,10 +301,10 @@ This file is base on the examples shown on the bootstrap web page:
             </table>
         </div>
 
-        <h1 id="forms">Forms</h1>
+        <h3 id="forms">Forms</h3>
         <hr>
         <div class="example">
-            <h3>Inline Form</h3>
+            <h4>Inline Form</h4>
             <form class="form-inline">
                 <div class="form-group">
                     <label class="sr-only" for="exampleInputEmail3">Email address</label>
@@ -319,7 +321,7 @@ This file is base on the examples shown on the bootstrap web page:
                 </div>
                 <button type="submit" class="btn btn-default">Sign in</button>
             </form>
-            <h3>Horizontal Form</h3>
+            <h4>Horizontal Form</h4>
             <form class="form-horizontal">
                 <div class="form-group">
                     <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
@@ -348,7 +350,7 @@ This file is base on the examples shown on the bootstrap web page:
                     </div>
                 </div>
             </form>
-            <h3>Form with Warnings</h3>
+            <h4>Form with Warnings</h4>
             <form class="form-horizontal">
                 <div class="form-group has-error">
                     <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
@@ -381,7 +383,7 @@ This file is base on the examples shown on the bootstrap web page:
             </form>
         </div>
 
-        <h1 id="control-sizing">Control Sizing</h1>
+        <h3 id="control-sizing">Control Sizing</h3>
         <hr>
         <div class="example">
             <form class="form">
@@ -420,7 +422,7 @@ This file is base on the examples shown on the bootstrap web page:
             </form>
         </div>
 
-        <h1 id="buttons">Buttons</h1>
+        <h3 id="buttons">Buttons</h3>
         <hr>
         <div class="example">
             <div>
@@ -451,7 +453,7 @@ This file is base on the examples shown on the bootstrap web page:
             </div>
         </div>
 
-        <h1 id="button-groups">Button Groups</h1>
+        <h3 id="button-groups">Button Groups</h3>
         <hr>
         <div class="example">
             <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
@@ -494,7 +496,7 @@ This file is base on the examples shown on the bootstrap web page:
             </div>
         </div>
 
-        <h1 id="dropdown">Dropdown</h1>
+        <h3 id="dropdown">Dropdown</h3>
         <hr>
         <div class="example">
             <div class="dropdown">
@@ -515,7 +517,7 @@ This file is base on the examples shown on the bootstrap web page:
             <br><br><br><br>
         </div>
 
-        <h1 id="tabs">Tab Navigation</h1>
+        <h3 id="tabs">Tab Navigation</h3>
         <hr>
         <div class="example">
             <ul class="nav nav-tabs">
@@ -526,7 +528,7 @@ This file is base on the examples shown on the bootstrap web page:
             <div>Some text beneath the tab navigation</div>
         </div>
 
-        <h1 id="pills">Pills Navigation</h1>
+        <h3 id="pills">Pills Navigation</h3>
         <hr>
         <div class="example">
             <ul class="nav nav-pills">
@@ -536,7 +538,7 @@ This file is base on the examples shown on the bootstrap web page:
             </ul>
         </div>
 
-        <h1 id="navbar-default">Navbar Default</h1>
+        <h3 id="navbar-default">Navbar Default</h3>
         <hr>
         <div class="example">
             <nav class="navbar navbar-default">
@@ -598,7 +600,7 @@ This file is base on the examples shown on the bootstrap web page:
             </nav>
         </div>
 
-        <h1 id="navbar-inverse">Navbar Inverse</h1>
+        <h3 id="navbar-inverse">Navbar Inverse</h3>
         <hr>
         <div class="example">
             <nav class="navbar navbar-inverse">
@@ -660,7 +662,7 @@ This file is base on the examples shown on the bootstrap web page:
             </nav>
         </div>
 
-        <h1 id="breadcrumbs">Breadcrumbs</h1>
+        <h3 id="breadcrumbs">Breadcrumbs</h3>
         <hr>
         <div class="example">
             <ol class="breadcrumb">
@@ -670,7 +672,7 @@ This file is base on the examples shown on the bootstrap web page:
             </ol>
         </div>
 
-        <h1 id="pagination">Pagination</h1>
+        <h3 id="pagination">Pagination</h3>
         <hr>
         <div class="example">
             <nav>
@@ -694,7 +696,7 @@ This file is base on the examples shown on the bootstrap web page:
             </nav>
         </div>
 
-        <h1 id="pager">Pager</h1>
+        <h3 id="pager">Pager</h3>
         <hr>
         <div class="example">
             <nav>
@@ -705,7 +707,7 @@ This file is base on the examples shown on the bootstrap web page:
             </nav>
         </div>
 
-        <h1 id="labels">Labels</h1>
+        <h3 id="labels">Labels</h3>
         <hr>
         <div class="example">
             <div>
@@ -726,7 +728,7 @@ This file is base on the examples shown on the bootstrap web page:
             </div>
         </div>
 
-        <h1 id="badges">Badges</h1>
+        <h3 id="badges">Badges</h3>
         <hr>
         <div class="example">
             <a href="#">Inbox <span class="badge">42</span></a> <br><br>
@@ -734,7 +736,7 @@ This file is base on the examples shown on the bootstrap web page:
             <button class="btn btn-default" type="button"> Messages <span class="badge">4</span></button>
         </div>
 
-        <h1 id="alerts">Alerts</h1>
+        <h3 id="alerts">Alerts</h3>
         <hr>
         <div class="example">
             <div class="alert alert-success" role="alert">
@@ -755,7 +757,7 @@ This file is base on the examples shown on the bootstrap web page:
             </div>
         </div>
 
-        <h1 id="panels">Panels</h1>
+        <h3 id="panels">Panels</h3>
         <hr>
         <div class="example">
             <div class="panel panel-default">
@@ -808,15 +810,15 @@ This file is base on the examples shown on the bootstrap web page:
             </div>
         </div>
 
-        <h1 id="sec_accordion">Accordion</h1>
+        <h3 id="accordion">Accordion</h3>
         <hr>
         <div class="example">
 
-            <div class="panel-group" id="accordion">
+            <div class="panel-group" id="acc">
                 <div class="panel panel-default">
                     <div class="panel-heading panel-heading-accordion">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            <a data-toggle="collapse" data-parent="#acc" href="#collapse1">
                                 Header 1
                                 <b class="caret"></b>
                             </a>
@@ -833,7 +835,7 @@ This file is base on the examples shown on the bootstrap web page:
                     </div>
                     <div class="panel-heading panel-heading-accordion">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            <a data-toggle="collapse" data-parent="#acc" href="#collapse2">
                                 Header 2
                                 <b class="caret"></b>
                             </a>
@@ -850,7 +852,7 @@ This file is base on the examples shown on the bootstrap web page:
                     </div>
                     <div class="panel-heading panel-heading-accordion">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                            <a data-toggle="collapse" data-parent="#acc" href="#collapse3">
                                 Header 3
                                 <b class="caret"></b>
                             </a>
@@ -870,7 +872,7 @@ This file is base on the examples shown on the bootstrap web page:
             </div>
          </div>
 
-        <h1 id="jumbotron">Jumbotron</h1>
+        <h3 id="jumbotron">Jumbotron</h3>
         <hr>
         <div class="example">
             <div class="jumbotron">
@@ -888,7 +890,8 @@ This file is base on the examples shown on the bootstrap web page:
             </div>
         </div>
 
-        <h1 id="callout">Callout</h1>
+        <h1>Custom elements</h1>
+        <h3 id="callout">Callout</h3>
         <hr>
         <div class="example">
             <div class="bs-callout bs-callout-default">
@@ -911,7 +914,7 @@ This file is base on the examples shown on the bootstrap web page:
             </div>
         </div>
 
-        <h1 id="contextual-backgrounds">Contextual Backgrounds</h1>
+        <h3 id="contextual-backgrounds">Contextual Backgrounds</h3>
         <hr>
         <div class="example">
             <div class="bg-primary mar-pad-1">Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
@@ -921,7 +924,7 @@ This file is base on the examples shown on the bootstrap web page:
             <p class="bg-danger mar-pad-1">Donec ullamcorper nulla non metus auctor fringilla.</p>
         </div>
 
-        <h1 id="plainbox">Plain box entity w/o or with margin or padding</h1>
+        <h3 id="plainbox">Plain box entity w/o or with margin or padding</h3>
         <hr>
         <div class="example">
             <div class="plainbox mar-05">Div plainbox with 0.5em margin!</div>
@@ -930,7 +933,7 @@ This file is base on the examples shown on the bootstrap web page:
             <p class="plainbox mar-pad-05">Paragraph plainbox with 0.5em margin and padding!</p>
         </div>
 
-        <h1 id="colors-available">Available colors</h1>
+        <h3 id="colors-available">Available colors</h3>
         <hr>
         <div class="example">
             <div class="row">
@@ -952,9 +955,6 @@ This file is base on the examples shown on the bootstrap web page:
                 <div class="col-sm-3 bg-grapefruit-dark">grapefruit-dark</div>
             </div>
         </div>
-
-        <br><br><br><br>
-
     </div>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
