@@ -1,0 +1,74 @@
+// Custom components
+
+.plainbox {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+// Vertical stepper component
+@stepper-diameter: 32px;
+
+.stepper {
+    position: relative;
+    min-height: 50px;
+
+    .stp-circle {
+        width: @stepper-diameter;
+        height: @stepper-diameter;
+        line-height: @stepper-diameter;
+        border-radius: @stepper-diameter/2;
+        position: relative;
+        color: white;
+        text-align: center;
+        background: @brand-primary;
+    }
+    .stp-circle.bg-success {
+        background: @brand-success;
+    }
+    .stp-circle.bg-info {
+        background: @brand-info;
+    }
+    .stp-circle.bg-warning {
+        background: @brand-warning;
+    }
+    .stp-circle.bg-danger {
+        background: @brand-danger;
+    }
+
+    .stp-line {
+        position: absolute;
+        left: @stepper-diameter/2;
+        bottom: 5px;
+        top: 35px;
+        border-left: 1px solid @brand-primary;
+    }
+    .stp-line.bg-success {
+        border-left: 1px solid @brand-success;
+    }
+    .stp-line.bg-info {
+        border-left: 1px solid @brand-info;
+    }
+    .stp-line.bg-warning {
+        border-left: 1px solid @brand-warning;
+    }
+    .stp-line.bg-danger {
+        border-left: 1px solid @brand-danger;
+    }
+
+    // Vertical offset for stepper title and content
+    .stp-offset {
+        margin-left: @stepper-diameter;
+        padding-left: 16px;
+    }
+
+    .stp-title {
+        line-height: @stepper-diameter;
+        font-weight: bold;
+    }
+}
+
+// Position all first child divs of a 'stepper' element horizontally at the same height
+.stepper > div:first-child {
+    position: static;
+    height: 0;
+}
